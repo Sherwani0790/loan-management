@@ -1,0 +1,359 @@
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800"); */
+
+.login_body {
+    /* background     : #fe00ff00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    background-image: url(../../Images/background.png);
+    background-repeat: round;
+}
+
+.logo_h1 {
+    color: #066842;
+}
+
+.login_h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.login_p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 15px 0 9px;
+    padding-bottom: 10px;
+}
+
+.login_button {
+    border-radius: 10px;
+    border: 1px solid #003A7F;
+    background: #003A7F;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    width: 150px;
+}
+
+.login_button:hover,
+.login_button:active,
+.login_button:focus {
+    border-radius: 10px;
+    border: 1px solid #003A7F !important;
+
+    background: #003A7F !important;
+
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    width: 150px;
+}
+
+.login_button:active {
+    transform: scale(0.95);
+}
+
+.login_button:focus {
+    outline: none;
+}
+
+.login_button.ghost {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.login_form {
+    /* background-image: linear-gradient(to right, #CDC, #f6f6f6); */
+    display: flex;
+    /* align-items  : center; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.login_input {
+    background-color: #eee;
+    border: none;
+    padding: 10px 40px !important;
+    margin: 10px 0 10px 0px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 0px 5px 28px 5px #ccc;
+    outline: #1111;
+}
+
+.login_input_pass {
+    background-color: #eee;
+    border: none;
+    padding: 10px 15px !important;
+    margin: 10px 0 10px 0px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 0px 5px 28px 5px #ccc;
+    outline: #1111;
+}
+
+.layout-config {
+    display: none !important;
+}
+
+.field_Log {
+    text-align: left;
+}
+
+.field_Log label {
+    color: rgb(25, 25, 25);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.forgot_parent {
+    text-align: -webkit-right;
+    margin-bottom: 30px;
+}
+
+.forgot {
+    cursor: pointer;
+    color: red;
+}
+
+.forgot:hover {
+    cursor: pointer;
+    color: red;
+    text-decoration: underline;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 1024px;
+    max-width: 100%;
+    min-height: 500px;
+    padding: 100px;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.signin-container {
+    right: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.right-panel-active .signin-container {
+    transform: translateX(100%);
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 30px;
+    right: 54%;
+    width: 42%;
+    height: 85%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+    background-image: url(../../Images/building.png) !important;
+    background-size: cover;
+    background-repeat: round;
+}
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.overlay {
+    /* background         : -webkit-linear-gradient(to right, #4ce4b1, #44b992); */
+    /* background         : linear-gradient(to right, #4ce4b1, #44b992); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #ffffff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a {
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
+
+.OTP_Input {
+    width: 100%;
+    /* text-align   : center; */
+    padding: 10px 15px !important;
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 0px 5px 28px 5px #ccc;
+    outline: #1111;
+    margin: 10px 0 10px 0px;
+}
+
+.input_email {
+    background-image: url(../../Images/email.svg) !important;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 7px;
+}
+
+.input_pass {
+    background-image: url(../../Images/password.svg) !important;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 7px;
+}
+
+input[type="password"] {
+    width: 100%;
+
+}
+
+/* body {
+    background-image   : url(../src/assets/bg_2x.png) !important;
+    /* height             : 35px;
+    width              : 35px; */
+/* background-repeat  : no-repeat;
+    background-position: center; */
+/* background-size    : 20px; */
+/* }  */
+
+
+
+.img__div img {
+    width: 50%;
+}
+
+@media (min-width:769px) and (max-width:1440px) {
+
+    .img__div img {
+        width: 30%;
+    }
+
+    .container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+        position: relative;
+        overflow: hidden;
+        width: 650px;
+        max-width: 100%;
+        min-height: 350px;
+        padding: 53px;
+    }
+}

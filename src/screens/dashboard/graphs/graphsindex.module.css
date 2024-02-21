@@ -1,0 +1,48 @@
+.card_graph {
+  border: 1px solid var(--primary-50);
+  padding: 15px;
+  box-shadow: 0px 0px 5px -1px var(--graph-card-shadow);
+  border-radius: 6px;
+  margin-top: 1rem;
+  height: 390px;
+
+}
+
+.graph_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--primry-50);
+  padding-bottom: 0.71rem;
+}
+
+.graph_right_side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.graph_digit_count {
+  font-size: 11px;
+  background: var(--primry-500);
+  color: var(--primary-50);
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-weight: 400;
+}
+
+.graph_viewall {
+  margin: 0;
+  font-size: 11px;
+  color: var(--secondary-500);
+  cursor: pointer;
+}
+
+.graph_viewall:hover {
+  text-decoration: underline;
+}
+
+.card_graph .graph_header .bold_header span {
+  font-size: 16px;
+}

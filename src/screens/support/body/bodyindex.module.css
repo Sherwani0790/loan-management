@@ -1,0 +1,39 @@
+/* DropdownButton.css */
+.dropdown_button {
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.hide_chevron::after {
+  display: none;
+}
+
+.dropdown_menu {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 75px;
+  /* left: auto; */
+  right: 60px;
+  width: 100px;
+}
+
+.dropdown_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown_item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown_item:hover {
+  background-color: #ccc;
+}

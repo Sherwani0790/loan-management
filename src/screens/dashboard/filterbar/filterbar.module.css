@@ -1,0 +1,32 @@
+.date_filter {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+.date_filter span {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--gray-200);
+  width: 120px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-size: 11px;
+}
+.date_filter span:hover {
+  background-color: var(--secondary-600);
+  color: var(--gray-10);
+  cursor: pointer;
+}
+.active {
+  background-color: var(--secondary-500);
+  color: var(--gray-10);
+  cursor: pointer;
+}
+.campaing_widgetbutton {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  align-items: center;
+}
