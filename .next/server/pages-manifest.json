@@ -2,9 +2,12 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/transaction/invoices/main-view": "pages/transaction/invoices/main-view.js",
-  "/dashboard": "pages/dashboard.js",
-  "/transaction/schedule-of-assignment/main-view": "pages/transaction/schedule-of-assignment/main-view.js",
   "/": "pages/index.js",
+  "/dashboard": "pages/dashboard.js",
+  "/transaction/invoices/main-view": "pages/transaction/invoices/main-view.js",
+  "/transaction/schedule-of-assignment/main-view": "pages/transaction/schedule-of-assignment/main-view.js",
+  "/credit-request/client-request": "pages/credit-request/client-request.js",
+  "/credit-request/debtor-request": "pages/credit-request/debtor-request.js",
+  "/support": "pages/support.js",
   "/user-management": "pages/user-management.js"
 }
